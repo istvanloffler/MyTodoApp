@@ -10,8 +10,6 @@ def add_todo():
         todos.append(todo)
         functions.write_todos(todos)
         st.session_state.new_todo = ""
-    else:
-        print("Write todo")
 
 
 def complete_todo():
@@ -39,4 +37,4 @@ st.text_input(label="", placeholder="Add new todo...", on_change=add_todo, key='
 
 st.button(label="Complete", key="Complete", on_click=complete_todo())
 
-st.session_state
+#st.session_state
