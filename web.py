@@ -18,7 +18,7 @@ def complete_todo():
             todos.pop(index)
             functions.write_todos(todos)
             del st.session_state[todo]
-            checkboxes.pop(checkbox)
+            checkboxes.pop(index)
 
 
 st.title("Todo App")
