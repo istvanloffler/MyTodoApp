@@ -18,6 +18,7 @@ def complete_todo():
             todos.pop(index)
             functions.write_todos(todos)
             del st.session_state[todo]
+            checkboxes.pop(checkbox)
 
 
 st.title("Todo App")
@@ -37,4 +38,4 @@ st.text_input(label="", placeholder="Add new todo...", on_change=add_todo, key='
 
 st.button(label="Complete", key="Complete", on_click=complete_todo())
 
-#st.session_state
+st.session_state
